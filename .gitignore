@@ -1,0 +1,28 @@
+# --- uv / Python Virtual Environments ---
+# uv creates this by default when you run 'uv venv' or 'uv run'
+.venv/
+
+# --- uv specific files ---
+# Usually, you DO want to commit uv.lock and pyproject.toml.
+# However, you should ignore the python version file if you want 
+# different teammates to use different minor versions locally.
+.python-version
+
+# --- Python Build & Distribution ---
+__pycache__/
+*.py[cod]
+*$py.class
+dist/
+build/
+*.egg-info/
+
+# --- Environment & Secrets ---
+# NEVER commit your secrets!
+.env
+.env.local
+
+# --- IDEs & OS Junk ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
